@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './admin.css';
 import { login, verifyToken, uploadImage } from '../api/client';
 import { useContent } from '../context/ContentContext';
-import type { SiteContent, GrowthCard, WorkItem, Stat, PricingPlan, Testimonial, BlogPost } from '../context/ContentContext';
+import type { GrowthCard, WorkItem, Stat, PricingPlan, Testimonial, BlogPost } from '../context/ContentContext';
 
 // ─── Toast ────────────────────────────────────────────────────────────────────
 function useToast() {
