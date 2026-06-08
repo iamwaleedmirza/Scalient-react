@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { ContentProvider, useContent } from './context/ContentContext'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -11,6 +13,7 @@ import Feedback from './components/Feedback'
 import Blog from './components/Blog'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import AdminPanel from './admin/AdminPanel'
 
 const SCRIPTS = [
   '/js/jquery-3.5.1.min.dc5e7f18c8.js',
@@ -29,25 +32,29 @@ function loadScript(src: string) {
     const s = document.createElement('script')
     s.src = src
     s.onload = () => resolve()
-    s.onerror = () => resolve() // don't block chain on error
+    s.onerror = () => resolve()
     document.body.appendChild(s)
   })
 }
 
-function App() {
+function HomePage() {
+  const { loading } = useContent()
+
   useEffect(() => {
-    // Load Webflow + GSAP scripts sequentially AFTER React has rendered.
-    // This guarantees they always find a fully populated DOM, whether the
-    // page is loaded fresh or from cache.
+    if (loading) return
     const run = async () => {
       for (const src of SCRIPTS) {
         await loadScript(src)
       }
-      // readyState is already 'complete' at this point so Webflow's internal
-      // check fires e() immediately — no manual init needed.
     }
     run()
-  }, [])
+  }, [loading])
+
+  if (loading) return (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', fontSize: 16, color: '#888' }}>
+      Loading…
+    </div>
+  )
 
   return (
     <>
@@ -64,6 +71,17 @@ function App() {
       <CTA />
       <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <ContentProvider>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/admin" element={<AdminPanel />} />
+      </Routes>
+    </ContentProvider>
   )
 }
 

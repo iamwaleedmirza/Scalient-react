@@ -1,0 +1,328 @@
+{
+  "navbar": {
+    "ctaText": "Contact Us Now",
+    "ctaLink": "/contact"
+  },
+  "hero": {
+    "badgeNew": "New Button Updated",
+    "badgeText": "No Hidden Pricing Update",
+    "title": "Fueling the Next Generation of Brands Updates",
+    "description": "Powering bold ideas with strategy, creativity, and growth.  Updated",
+    "ctaText": "Get Started Update",
+    "ctaLink": "/contact",
+    "watchDemoUrl": "https://www.youtube.com/watch?v=TAWlLFCqF1k",
+    "partnerText": "Our Esteemed Clients and Partners Update",
+    "partnerNumber": "7899+",
+    "trustText": "Trusted & Transparent Growth",
+    "locationText": "Global Enterprise drives innovation",
+    "locationNumber": "9880+",
+    "locations": [
+      "Mexico",
+      "USA"
+    ],
+    "marketingLabel": "Marketing Team",
+    "heroImage": "/images/69363a38ca18208550a6d873_Hero%20Image.webp"
+  },
+  "about": {
+    "sectionLabel": "About Scalient",
+    "description": "At Scalient, we believe marketing isn't about selling it's about connecting. We're a full-serv ice marketing agency built to help brands grow with purpose and data-driven precision. From crafting compelling stories to executing campaigns that convert, we blend strategy to turn attention into action. Updated",
+    "bottomText": "Our Bold and Brilliant Thinkers update",
+    "ctaText": "Learn More Update",
+    "ctaLink": "/about",
+    "image1": "/images/6936f8d3c7ba8c97c0e13d32_About%20Image%2001.webp",
+    "image2": "/images/6936f8d7c7a9722fffc5a74e_About%20Image%2002.webp"
+  },
+  "growth": {
+    "title": "Solutions Tailored for Your Growth",
+    "description": "We fuel bold ideas, driving them forward with sharp strategy",
+    "ctaText": "Get Started",
+    "ctaLink": "/contact",
+    "cards": [
+      {
+        "title": "Content Marketing",
+        "description": "Create and distribute valuable content to attract and engage"
+      },
+      {
+        "title": "Marketing Automation",
+        "description": "Streamline marketing processes and deliver experiences at scale"
+      },
+      {
+        "title": "Influencer Marketing",
+        "description": "Partner with trusted voices to amplify your brand's reach"
+      },
+      {
+        "title": "Email Marketing",
+        "description": "Create and distribute valuable content to attract and engage"
+      }
+    ]
+  },
+  "work": {
+    "titleLine1": "OUR BEST",
+    "titleLine2Start": "WOR",
+    "titleLine2End": "KS",
+    "ctaText": "View Works",
+    "ctaLink": "/work",
+    "items": [
+      {
+        "title": "Market Magnet",
+        "date": "March - 2020",
+        "image": "/images/694120cf9354e2b96ead86e7_Work%20Image%2001_compressed.webp",
+        "link": "/work/market-magnet"
+      },
+      {
+        "title": "Growth Engine",
+        "date": "June - 2022",
+        "image": "/images/694120bb0f86049c23610b43_Work%20Image%2002_compressed.webp",
+        "link": "/work/growth-engine"
+      },
+      {
+        "title": "Trend Beacon",
+        "date": "September - 2023",
+        "image": "/images/694120a0ad5fd45e07063788_Work%20Image%2003_compressed.webp",
+        "link": "/work/trend-beacon"
+      },
+      {
+        "title": "Market Motion",
+        "date": "September - 2024",
+        "image": "/images/6941208f0c0374d0830152a2_Work%20Image%2004_compressed.webp",
+        "link": "/work/market-motion"
+      },
+      {
+        "title": "Tidal Strategy",
+        "date": "September - 2025",
+        "image": "/images/6972de394251a3269470ba07_Image.webp",
+        "link": "/work/tidal-strategy"
+      }
+    ]
+  },
+  "number": {
+    "title": "The Numbers Behind Success Update",
+    "description": "Strategy, creativity, and growth - the engine for every bold idea. Update",
+    "ctaText": "Get Started Update",
+    "ctaLink": "/contact",
+    "stats": [
+      {
+        "value": "800K",
+        "label": "Live Users",
+        "description": "We offer flexible, custom-fit plans designed to meet the unique needs and budget of your team"
+      },
+      {
+        "value": "98%",
+        "label": "Unique Visitors",
+        "description": "Our commitment to quality shines through near 98.05%"
+      },
+      {
+        "value": "23K",
+        "label": "Suoervisors",
+        "description": "Organic growth brings in twenty-three thousand signups"
+      }
+    ],
+    "tags": [
+      "Strategic Agency",
+      "Results-driven",
+      "Influential",
+      "Innovation Driven",
+      "Multidimensional",
+      "Strategic-minded",
+      "Result oriented",
+      "Google"
+    ]
+  },
+  "trusted": {
+    "title": "Trusted by Leading Brands",
+    "logos": [
+      "/images/69378d0833dcb1a313bcfd40_Brand%20Logo%2001.svg",
+      "/images/69378d08448f7be27759fd78_Brand%20Logo%2002.svg",
+      "/images/69378d082f9d65086f7631b3_Brand%20Logo%2003.svg",
+      "/images/69378d087c6026d6abaebaa6_Brand%20Logo%2004.svg",
+      "/images/69378d0833dcb1a313bcfd40_Brand%20Logo%2001.svg",
+      "/images/69378d087e66078c89e37240_Brand%20Logo%2006.svg"
+    ]
+  },
+  "plan": {
+    "subtitle": "Our Plans",
+    "title": "Pricing and Plans Tailored to any Team",
+    "description": "We offer flexible, custom-fit plans designed to meet the unique needs and budget of your team",
+    "monthly": [
+      {
+        "price": "$1799",
+        "name": "Beginners",
+        "description": "Start your journey with essential tools and expert guidance",
+        "features": [
+          "Foundational strategy and setup",
+          "Simple monthly report",
+          "Basic content creation plan",
+          "Monthly check-in call",
+          "Trusted by Leading Brands"
+        ],
+        "link": "/product/beginners",
+        "highlighted": false
+      },
+      {
+        "price": "$9299",
+        "name": "Professional",
+        "description": "Scale your marketing with advanced features and dedicated support",
+        "features": [
+          "Comprehensive multi-channel strategy",
+          "Advanced content calendar design",
+          "Priority email and phone support 24/7",
+          "Detailed weekly/monthly analytic report",
+          "Custom 5 landing page creation"
+        ],
+        "link": "/product/professional",
+        "highlighted": true
+      },
+      {
+        "price": "$431035",
+        "name": "Enterprise",
+        "description": "Unlock maximum potential with custom strategy and unlimited capacity",
+        "features": [
+          "Real-time dashboards and reporting",
+          "24/7 designated account manager",
+          "Quarterly business strategy meeting",
+          "High-volume custom campaigns",
+          "Full marketing automation setup"
+        ],
+        "link": "/product/enterprise",
+        "highlighted": false
+      }
+    ],
+    "yearly": [
+      {
+        "price": "$699",
+        "name": "Beginners",
+        "description": "Start your journey with essential tools and expert guidance",
+        "features": [
+          "Foundational strategy and setup",
+          "Simple monthly report",
+          "Basic content creation plan",
+          "Monthly check-in call",
+          "Trusted by Leading Brands"
+        ],
+        "link": "/product/beginners",
+        "highlighted": false
+      },
+      {
+        "price": "$899",
+        "name": "Professional",
+        "description": "Scale your marketing with advanced features and dedicated support",
+        "features": [
+          "Comprehensive multi-channel strategy",
+          "Advanced content calendar design",
+          "Priority email and phone support 24/7",
+          "Detailed weekly/monthly analytic report",
+          "Custom 5 landing page creation"
+        ],
+        "link": "/product/professional",
+        "highlighted": true
+      },
+      {
+        "price": "$1001",
+        "name": "Enterprise",
+        "description": "Unlock maximum potential with custom strategy and unlimited capacity",
+        "features": [
+          "Real-time dashboards and reporting",
+          "24/7 designated account manager",
+          "Quarterly business strategy meeting",
+          "High-volume custom campaigns",
+          "Full marketing automation setup"
+        ],
+        "link": "/product/enterprise",
+        "highlighted": false
+      }
+    ]
+  },
+  "feedback": {
+    "title": "Real People, Real Results Feedback",
+    "description": "See what our users are truly accomplishing with honest, and project-based reviews",
+    "testimonials": [
+      {
+        "text": "They delivered a comprehensive strategy that immediately focused our entire team. The difference in our engagement metrics was noticeable within the first 60 days.",
+        "name": "Edward Hayes",
+        "role": "Chief Operating Officer (COO)",
+        "image": "/images/69403ba631147f7d8198ed84_Feedback%20Image%2001.webp"
+      },
+      {
+        "text": "Our previous campaigns felt like throwing spaghetti at the wall. The team at Scalient brought incredible discipline and data analysis to our budget.",
+        "name": "Alistair Finch",
+        "role": "Chief Operating Officer (COO)",
+        "image": "/images/69403ba6b162e355ed828f8a_Feedback%20Image%2002.webp"
+      },
+      {
+        "text": "Our industry has some strict compliance hurdles, which made digital marketing challenging. Scalient navigated these complex regulatory waters with expertise.",
+        "name": "Alistair Finch",
+        "role": "Chief Operating Officer (COO)",
+        "image": "/images/69403ba6d70919e8711ad08b_Feedback%20Image%2003.webp"
+      },
+      {
+        "text": "The creative concepts they developed for our new product launch were fresh, engaging, and perfectly on brand. They really understood our target audience.",
+        "name": "James O'Connell",
+        "role": "Founder & Head of Strategy",
+        "image": "/images/69403ba6f6849a0d96c701e6_Feedback%20Image%2004.webp"
+      },
+      {
+        "text": "The most valuable aspect of working with Scalient Agency is their proactive communication and genuine partnership. We never felt like just another client.",
+        "name": "Alistair Finch",
+        "role": "Chief Operating Officer (COO)",
+        "image": "/images/693f6d74226023731cfbb5cf_Blog%20Author%20Image.webp"
+      },
+      {
+        "text": "The most valuable aspect of working with Scalient Agency is their proactive communication and genuine partnership. We never felt like just another client.",
+        "name": "Tayyab",
+        "role": "Developer",
+        "image": "/uploads/1780928609623-ck26x5nxa0q.webp"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Market Insights and our Strategy",
+    "description": "We fuel bold ideas, driving them forward with sharp strategy",
+    "ctaText": "View Blogs",
+    "ctaLink": "/blog",
+    "posts": [
+      {
+        "image": "/images/6940f1a019bcb0fc65438c28_Blog%20Image%2002_compressed.webp",
+        "category": "Marketing",
+        "title": "Metrics Why does Focusing on Vanity Metrics is the Hidden Cost",
+        "description": "Stop Mistaking Engagement for Revenue. We detail how to Audit Your Data and Pivot from Likes",
+        "author": "Alistair Finch",
+        "authorImage": "/images/6940f1203339d89b58b5fe87_Blog%20Author%20Image%2001_compressed.webp",
+        "date": "December 16, 2025",
+        "link": "/blog/metrics-why-does-focusing-on-vanity-metrics-is-the-hidden-cost"
+      },
+      {
+        "image": "/images/6940f1745aa6b9bc11de7de1_Blog%20Image%2003_compressed.webp",
+        "category": "Clarity",
+        "title": "Lookalike Build Hyper-Accurate Lookalike Audiences that Convert",
+        "description": "Stop wasting ad budget on generic targeting. We reveal the counter-intuitive data points",
+        "author": "Liam Walker",
+        "authorImage": "/images/6940f0fa5aa6b9bc11de668f_Blog%20Author%20Image%2002_compressed.webp",
+        "date": "December 16, 2025",
+        "link": "/blog/lookalike-build-hyper-accurate-lookalike-audiences-that-convert"
+      },
+      {
+        "image": "/images/6940f14ae3e09096e2ea2dcf_Blog%20Image%2004_compressed.webp",
+        "category": "Revenue",
+        "title": "Fatal Flaw in Growth Strategy Why Focusing on First-Sales",
+        "description": "This article exposes the critical error that starves long-term profitability optimizing solely",
+        "author": "Julian Reed",
+        "authorImage": "/images/6940f04b03ff1fcc6f03f0f3_Blog%20Author%20Image%2003_compressed.webp",
+        "date": "December 16, 2025",
+        "link": "/blog/fatal-flaw-in-growth-strategy-why-focusing-on-first-sales"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Let's Get Started Updated"
+  },
+  "footer": {
+    "newsletterTitle": "Sign up for our newsletter today.",
+    "emailNote": "No spam, Just valued update.",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://www.x.com/",
+      "instagram": "https://www.instagram.com/"
+    },
+    "copyright": "© Copyright 2026 | Design & Developed By Flomio Studio"
+  }
+}

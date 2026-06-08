@@ -1,50 +1,29 @@
-import React from 'react'
+import React from 'react';
+import { useContent } from '../context/ContentContext';
 
 const Growth: React.FC = () => {
+  const { content } = useContent();
+  const g = content?.growth;
+
   return (
     <section className="section growth">
       <div className="w-layout-blockcontainer container w-container">
         <div className="growth-wrapper">
           <div className="growth-top-wrap sticky">
-            <div
-              data-w-id="47b71f08-e712-af07-6cfd-1d319d400e9a"
-             
-              className="growth-left-wrap"
-            >
-              <h2 className="growth-title">Solutions Tailored for Your Growth</h2>
+            <div data-w-id="47b71f08-e712-af07-6cfd-1d319d400e9a" className="growth-left-wrap">
+              <h2 className="growth-title">{g?.title ?? 'Solutions Tailored for Your Growth'}</h2>
             </div>
-            <div
-              data-w-id="c534b1f5-cf3a-a7be-4ddc-d2c4a70f82f9"
-             
-              className="growth-right-wrap"
-            >
-              <p className="growth-details">
-                We fuel bold ideas, driving them forward with sharp strategy
-              </p>
-              <a
-                data-wf--primary-button--variant="green"
-                data-w-id="f75274b3-e538-710b-a363-f36512a31121"
-                href="/contact"
-                className="primary-button w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492 w-inline-block"
-              >
+            <div data-w-id="c534b1f5-cf3a-a7be-4ddc-d2c4a70f82f9" className="growth-right-wrap">
+              <p className="growth-details">{g?.description}</p>
+              <a href={g?.ctaLink ?? '/contact'} className="primary-button w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492 w-inline-block">
                 <div className="primary-btn-wrap w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492">
                   <div className="primary-btn-text-wrap _01">
-                    <div>Get Started</div>
-                    <img
-                      src="/images/6934effbe4f3f00cfba4e6ba_Icon.svg"
-                      loading="lazy"
-                      alt="Icon"
-                      className="primary-icon w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492"
-                    />
+                    <div>{g?.ctaText ?? 'Get Started'}</div>
+                    <img src="/images/6934effbe4f3f00cfba4e6ba_Icon.svg" loading="lazy" alt="Icon" className="primary-icon w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492" />
                   </div>
                   <div className="primary-btn-text-wrap _02">
-                    <div>Get Started</div>
-                    <img
-                      src="/images/6934effbe4f3f00cfba4e6ba_Icon.svg"
-                      loading="lazy"
-                      alt="Icon"
-                      className="primary-icon w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492"
-                    />
+                    <div>{g?.ctaText ?? 'Get Started'}</div>
+                    <img src="/images/6934effbe4f3f00cfba4e6ba_Icon.svg" loading="lazy" alt="Icon" className="primary-icon w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492" />
                   </div>
                   <div className="primary-btn-bg w-variant-0a3f9beb-5f52-53a0-e1a7-59f8ae06e492"></div>
                 </div>
@@ -53,180 +32,27 @@ const Growth: React.FC = () => {
           </div>
           <div className="growth-wrap">
             <div className="growth-grid-wrap">
-              <div
-                data-w-id="81b8fc98-3277-d49d-6f6d-84843d02824e"
-               
-                className="growth-card-wrapper"
-              >
-                <div
-                  data-w-id="209723b3-83b9-1183-7242-b068f3f98cd4"
-                  className="growth-card-wrap"
-                >
-                  <div className="growth-card-all-wrap">
-                    <div className="growth-card-icon-wrap">
-                      <img
-                        src="/images/69378f87dae28dedd27d493a_Growth%20Card%20Icon.svg"
-                        loading="lazy"
-                        data-w-id="74c54a55-0597-8f20-802b-af5cd3023f3b"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                      <img
-                        src="/images/69378fa56c4fb1dca7521333_Growth%20Card%20Icon%2002.svg"
-                        loading="lazy"
-                        data-w-id="e0f07d9c-f757-5da3-727b-2c64a4436bec"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
+              {(g?.cards ?? []).map((card, i) => (
+                <div key={i} className="growth-card-wrapper">
+                  <div className="growth-card-wrap">
+                    <div className="growth-card-all-wrap">
+                      <div className="growth-card-icon-wrap">
+                        <img src="/images/69378f87dae28dedd27d493a_Growth%20Card%20Icon.svg" loading="lazy" alt="Growth Card Icon" className="growth-card-icon" />
+                        <img src="/images/69378fa56c4fb1dca7521333_Growth%20Card%20Icon%2002.svg" loading="lazy" alt="Growth Card Icon" className="growth-card-icon" />
+                      </div>
+                      <div className="growth-card-title">{card.title}</div>
+                      <p className="growth-card-details">{card.description}</p>
                     </div>
-                    <div
-                      data-w-id="bfebc67e-08b5-4b40-81ad-482381dd3d39"
-                      className="growth-card-title"
-                    >
-                      Content Marketing
-                    </div>
-                    <p className="growth-card-details">
-                      Create and distribute valuable content to attract and engage
-                    </p>
+                    <div className="growth-card-bg"></div>
                   </div>
-                  <div
-                    data-w-id="381d34d4-e84b-fe50-3bf3-fdac56eb1747"
-                    className="growth-card-bg"
-                  ></div>
                 </div>
-              </div>
-              <div
-                data-w-id="2bcc62ab-0c48-e530-8d5c-8ac51a357205"
-               
-                className="growth-card-wrapper"
-              >
-                <div
-                  data-w-id="0798721c-11e2-65ac-834d-3bed3c494382"
-                  className="growth-card-wrap"
-                >
-                  <div className="growth-card-all-wrap">
-                    <div className="growth-card-icon-wrap">
-                      <img
-                        src="/images/69378f87dae28dedd27d493a_Growth%20Card%20Icon.svg"
-                        loading="lazy"
-                        data-w-id="0798721c-11e2-65ac-834d-3bed3c494385"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                      <img
-                        src="/images/69378fa56c4fb1dca7521333_Growth%20Card%20Icon%2002.svg"
-                        loading="lazy"
-                        data-w-id="0798721c-11e2-65ac-834d-3bed3c494386"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                    </div>
-                    <div
-                      data-w-id="0798721c-11e2-65ac-834d-3bed3c494387"
-                      className="growth-card-title"
-                    >
-                      Marketing Automation
-                    </div>
-                    <p className="growth-card-details">
-                      Streamline marketing processes and deliver experiences at scale
-                    </p>
-                  </div>
-                  <div
-                    data-w-id="0798721c-11e2-65ac-834d-3bed3c49438b"
-                    className="growth-card-bg"
-                  ></div>
-                </div>
-              </div>
-              <div
-                data-w-id="71890d19-5d29-77a5-8ab4-ae1f7fdebeae"
-               
-                className="growth-card-wrapper"
-              >
-                <div
-                  data-w-id="03ceda07-27e3-686e-2746-3c3869cf5314"
-                  className="growth-card-wrap"
-                >
-                  <div className="growth-card-all-wrap">
-                    <div className="growth-card-icon-wrap">
-                      <img
-                        src="/images/69378f87dae28dedd27d493a_Growth%20Card%20Icon.svg"
-                        loading="lazy"
-                        data-w-id="03ceda07-27e3-686e-2746-3c3869cf5317"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                      <img
-                        src="/images/69378fa56c4fb1dca7521333_Growth%20Card%20Icon%2002.svg"
-                        loading="lazy"
-                        data-w-id="03ceda07-27e3-686e-2746-3c3869cf5318"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                    </div>
-                    <div
-                      data-w-id="03ceda07-27e3-686e-2746-3c3869cf5319"
-                      className="growth-card-title"
-                    >
-                      Influencer Marketing
-                    </div>
-                    <p className="growth-card-details">
-                      Partner with trusted voices to amplify your brand's reach
-                    </p>
-                  </div>
-                  <div
-                    data-w-id="03ceda07-27e3-686e-2746-3c3869cf531d"
-                    className="growth-card-bg"
-                  ></div>
-                </div>
-              </div>
-              <div
-                data-w-id="42bcc0f8-4b0d-bc68-0c51-9d6a587585cb"
-               
-                className="growth-card-wrapper"
-              >
-                <div
-                  data-w-id="d61500b8-d00c-7743-8358-03f2577365ac"
-                  className="growth-card-wrap"
-                >
-                  <div className="growth-card-all-wrap">
-                    <div className="growth-card-icon-wrap">
-                      <img
-                        src="/images/69378f87dae28dedd27d493a_Growth%20Card%20Icon.svg"
-                        loading="lazy"
-                        data-w-id="d61500b8-d00c-7743-8358-03f2577365af"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                      <img
-                        src="/images/69378fa56c4fb1dca7521333_Growth%20Card%20Icon%2002.svg"
-                        loading="lazy"
-                        data-w-id="d61500b8-d00c-7743-8358-03f2577365b0"
-                        alt="Growth Card Icon"
-                        className="growth-card-icon"
-                      />
-                    </div>
-                    <div
-                      data-w-id="d61500b8-d00c-7743-8358-03f2577365b1"
-                      className="growth-card-title"
-                    >
-                      Email Marketing
-                    </div>
-                    <p className="growth-card-details">
-                      Create and distribute valuable content to attract and engage
-                    </p>
-                  </div>
-                  <div
-                    data-w-id="d61500b8-d00c-7743-8358-03f2577365b5"
-                    className="growth-card-bg"
-                  ></div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Growth
+export default Growth;
